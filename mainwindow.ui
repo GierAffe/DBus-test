@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>764</width>
-    <height>638</height>
+    <width>841</width>
+    <height>707</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>341</width>
-      <height>581</height>
+      <width>701</width>
+      <height>361</height>
      </rect>
     </property>
     <column>
@@ -41,17 +41,23 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>764</width>
-     <height>25</height>
+     <width>841</width>
+     <height>23</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuD_Bus_Test">
+    <property name="title">
+     <string>D-Bus Test</string>
+    </property>
+   </widget>
+   <addaction name="menuD_Bus_Test"/>
   </widget>
+  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

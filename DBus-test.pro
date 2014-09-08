@@ -13,8 +13,10 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    maindbus.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    maindbus.h
 
 FORMS    += mainwindow.ui
