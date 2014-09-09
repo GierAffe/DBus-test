@@ -20,15 +20,15 @@
    <widget class="QTreeWidget" name="treeWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>701</width>
-      <height>361</height>
+      <x>9</x>
+      <y>9</y>
+      <width>441</width>
+      <height>451</height>
      </rect>
     </property>
     <column>
      <property name="text">
-      <string notr="true">1</string>
+      <string>DBus Message Names</string>
      </property>
     </column>
    </widget>
@@ -47,7 +47,7 @@
      <x>0</x>
      <y>0</y>
      <width>841</width>
-     <height>23</height>
+     <height>25</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuD_Bus_Test">

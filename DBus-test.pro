@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,9 +15,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    maindbus.cpp
+    maindbus.cpp \
+    dbusmessagebus.cpp
 
 HEADERS  += mainwindow.h \
-    maindbus.h
+    maindbus.h \
+    dbusmessagebus.h
 
 FORMS    += mainwindow.ui

@@ -1,12 +1,12 @@
 #include <QApplication>
+#include <QtCore/QDebug>
+#include <QtDBus/QtDBus>
 #include "mainwindow.h"
+#include "maindbus.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    MainWindow w;
-
-
 
     // Check if DBus is available
     if (!QDBusConnection::sessionBus().isConnected()) {
@@ -14,7 +14,9 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    MainWindow w;
     w.show();
+
 
     return a.exec();
 }
