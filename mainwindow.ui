@@ -10,19 +10,19 @@
     <x>0</x>
     <y>0</y>
     <width>841</width>
-    <height>707</height>
+    <height>529</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTreeWidget" name="treeWidget">
+   <widget class="QTreeWidget" name="messageBusNamesTree">
     <property name="geometry">
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>441</width>
+      <width>641</width>
       <height>451</height>
      </rect>
     </property>

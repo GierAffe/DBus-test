@@ -14,7 +14,6 @@ private:
 public:
     explicit DBusMessageBus(const QString &uniqueName, QObject *parent = 0);
     
-    
 };
 
 #endif // DBUSMESSAGEBUS_H
