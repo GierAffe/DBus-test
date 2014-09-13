@@ -11,6 +11,7 @@ class MainDBus : public QObject
 
 private:
     QDBusConnection sessionbus_;
+    QDBusConnection systembus_;
     QDBusInterface * dbus_iface_;
 
 public:
