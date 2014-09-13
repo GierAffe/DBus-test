@@ -1,8 +1,6 @@
 #ifndef MAINDBUS_H
 #define MAINDBUS_H
 
-class DBusMessageBus;
-
 #include <QObject>
 #include <QtDBus/QtDBus>
 
@@ -15,11 +13,14 @@ private:
     QDBusConnection sessionbus_;
     QDBusInterface * dbus_iface_;
 
-    QMap<QString, DBusMessageBus*> listMessageBus_;
-
 public:
     explicit MainDBus(QObject *parent = 0);
     ~MainDBus();
+
+    QStringList getAllBusNames();
+    QStringList getBusNames();
+    QStringList getUniqueNames();
+    QString matchBusNameToUniqueName(const QString &busName);
     
 };
 

@@ -9,44 +9,79 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>841</width>
-    <height>529</height>
+    <width>678</width>
+    <height>719</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QTreeWidget" name="messageBusNamesTree">
+   <widget class="QGroupBox" name="groupBoxAppInfo">
     <property name="geometry">
      <rect>
       <x>9</x>
       <y>9</y>
-      <width>641</width>
-      <height>451</height>
+      <width>660</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>100</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="title">
+     <string>App Info</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="messageBusNamesTree">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>115</y>
+      <width>581</width>
+      <height>491</height>
      </rect>
     </property>
     <column>
      <property name="text">
-      <string>DBus Message Names</string>
+      <string>DBus Bus Names</string>
      </property>
     </column>
    </widget>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
+   <widget class="QCheckBox" name="cbFilterUniqueBusNames">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>610</y>
+      <width>241</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Filter soul unique bus names</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>841</width>
+     <width>678</width>
      <height>25</height>
     </rect>
    </property>
