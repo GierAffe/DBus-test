@@ -4,13 +4,11 @@
 
 
 MainDBus::MainDBus(QObject *parent) : QObject(parent),
-    sessionbus_(QDBusConnection::sessionBus())
+    sessionbus_(QDBusConnection::ssessionBus()),
+    systembus_(QDBusConnection::systemBus())
 {
     // initialize standard dbus-interface
     dbus_iface_ = new QDBusInterface("org.freedesktop.DBus", "/org/freedesktop/DBus", "org.freedesktop.DBus", sessionbus_);
-
-    // request message bus name
-
 }
 
 MainDBus::~MainDBus()
